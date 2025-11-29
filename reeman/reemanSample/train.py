@@ -16,12 +16,15 @@ app = AppLauncher(args).app
 def main():
     env = ReemanEnv()
 
+    #Create Mutiple PPO's and switch case here
     model = PPO(
         "MlpPolicy",
         env,
         verbose=1,
         tensorboard_log="./reeman_logs",
     )
+
+    #Soft critic, etc 
 
     model.learn(total_timesteps=300_000)
     model.save("reeman_policy")
