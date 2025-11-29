@@ -32,7 +32,7 @@ from isaaclab.utils.assets import ISAAC_NUCLEUS_DIR
 # -------------------------------------------------------
 JETBOT_CONFIG = ArticulationCfg(
     spawn=sim_utils.UsdFileCfg(
-        usd_path=f"{ISAAC_NUCLEUS_DIR}/Robots/NVIDIA/Jetbot/jetbot.usd",
+        usd_path=f"{ISAAC_NUCLEUS_DIR}/Robots/NVIDIA/Jetbot/jetbot.usd", #replace with reeman usd
     ),
     actuators={
         "wheel_acts": ImplicitActuatorCfg(
